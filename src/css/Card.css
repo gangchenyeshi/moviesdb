@@ -1,0 +1,72 @@
+.movie {
+    margin: 1rem;
+    width: 300px;
+    background-color:  #22254b;
+    border-radius: 10px;
+    box-shadow: 3px, 3px, 5px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .movie img {
+    object-fit: cover;
+    height: 450px;
+    width: 100%;
+  }
+  .movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+  }
+  .movie-info h6{
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  .movie-info p{
+    margin: 5px 0;
+  }
+  .tag {
+    border-radius: 5px;
+    margin: 5px;
+    font-weight: bold;
+  }
+  .tag.green {
+    color: green;
+  }
+  .tag.red {
+    color: red;
+  }
+  .tag.yellow {
+    color: yellow;
+  }
+  .movie-info h6 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+.movie-over h6{
+  margin:3px 0 10px 0;
+  font-weight: bold;
+}
+.movie-over {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -3px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #22254b;
+  padding: 20px 10px;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+.movie:hover .movie-over {
+  transform: translateY(0%);
+}
